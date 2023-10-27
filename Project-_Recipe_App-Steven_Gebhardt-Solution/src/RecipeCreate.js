@@ -8,7 +8,7 @@ function RecipeCreate({ addRecipe }) {
   const initialFormState = {
     name: "",
     cuisine: "",
-    url: "",
+    photo: "",
     ingredients: "",
     preparation: "",
   };
@@ -55,15 +55,15 @@ function RecipeCreate({ addRecipe }) {
               />
             </td>
             <td>
-              <label htmlFor="ulr">Ulr:</label>
+              <label htmlFor="photo">Photo:</label>
               <input
-                id="ulr"
-                name="url"
-                type="url"
+                id="photo"
+                name="photo"
+                type="photo"
                 required={true}
                 onChange={handleChange}
-                value={formData.url}
-                placeholder="Url"
+                value={formData.photo}
+                placeholder="Photo"
               />
             </td>
             <td>
