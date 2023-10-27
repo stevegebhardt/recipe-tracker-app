@@ -59,7 +59,7 @@ function RecipeCreate({ addRecipe }) {
               <input
                 id="photo"
                 name="photo"
-                type="photo"
+                type="text"
                 required={true}
                 onChange={handleChange}
                 value={formData.photo}
