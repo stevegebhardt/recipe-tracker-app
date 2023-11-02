@@ -36,7 +36,7 @@ function RecipeCreate({ addRecipe }) {
                 id="name"
                 name="name"
                 type="text"
-                required={true}
+                required
                 onChange={handleChange}
                 value={formData.name}
                 placeholder="Name"
@@ -48,7 +48,7 @@ function RecipeCreate({ addRecipe }) {
                 id="cuisine"
                 name="cuisine"
                 type="text"
-                required={true}
+                required
                 onChange={handleChange}
                 value={formData.cuisine}
                 placeholder="Cuisine"
@@ -59,8 +59,8 @@ function RecipeCreate({ addRecipe }) {
               <input
                 id="photo"
                 name="photo"
-                type="text"
-                required={true}
+                type="url"
+                required
                 onChange={handleChange}
                 value={formData.photo}
                 placeholder="Photo"
@@ -71,7 +71,7 @@ function RecipeCreate({ addRecipe }) {
               <textarea
                 id="ingredients"
                 name="ingredients"
-                required={true}
+                required
                 onChange={handleChange}
                 value={formData.ingredients}
                 placeholder="Ingredients"
@@ -82,7 +82,7 @@ function RecipeCreate({ addRecipe }) {
               <textarea
                 id="preparation"
                 name="preparation"
-                required={true}
+                required
                 onChange={handleChange}
                 value={formData.preparation}
                 placeholder="Preparation"
